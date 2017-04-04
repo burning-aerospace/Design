@@ -307,7 +307,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 512
+		sci = 352
 		Tech
 		{
 			id = start
@@ -662,6 +662,28 @@ GAME
 			part = winglet3
 			part = R8winglet
 		}
+		Tech
+		{
+			id = specializedConstruction
+			state = Available
+			cost = 160
+			part = crewtube-125-25-2
+			part = crewtube-125-25-1
+			part = crewtube-airlock-125
+			part = crewtube-125-2
+			part = crewtube-125-1
+			part = stackBiCoupler
+			part = stackPoint1
+			part = dockingPort2
+			part = stackSeparator
+			part = trussAdapter
+			part = fairingSize2
+			part = pointyNoseConeB
+			part = KKAOSS.KIS.ground.plate
+			part = KIS.Container3
+			part = KAS.Strut1
+			part = KAS.Pylon1
+		}
 	}
 	SCENARIO
 	{
@@ -990,13 +1012,21 @@ GAME
 				Guid = 63c09d7a-d306-49b3-a884-4396bee0316a
 			}
 		}
-		LifeSupportBuildAid
+		LifeSupportMonitoring
 		{
 			visible = False
 			x = 810
-			y = 450
+			y = 75
 			width = 300
-			height = 180
+			height = 300
+		}
+		LifeSupportCrewRoster
+		{
+			visible = False
+			x = 800
+			y = 440
+			width = 320
+			height = 200
 		}
 	}
 	SCENARIO
@@ -1010,7 +1040,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.2.2
-		UT = 2990.9215869130476
+		UT = 3283.5615869127814
 		activeVessel = 0
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network
@@ -1044,13 +1074,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
-				INC = 0.16880630441594932
+				INC = 0.16880630441379024
 				LPE = 90
-				LAN = 338.09139476271736
+				LAN = 342.98919593853356
 				MNA = 0
-				EPH = 2988.8215869130495
+				EPH = 3282.0015869127828
 				REF = 1
 			}
 			PART
@@ -2402,13 +2432,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 300000.23637958337
-				ECC = 0.99999999999999989
-				INC = 0.16908384254160447
+				SMA = 0
+				ECC = 1
+				INC = 0.16908384254591552
 				LPE = 90
-				LAN = 338.0893874234277
-				MNA = 3.1415926207170166
-				EPH = 2988.8215869130495
+				LAN = 342.98718859923957
+				MNA = 0
+				EPH = 3282.0015869127828
 				REF = 1
 			}
 			PART
@@ -30633,8 +30663,9 @@ GAME
 		InterstellarFuelSwitch v2.4.6.0 / v2.4.6 = True
 		ModularFlightIntegrator v1.0.0.0 / v1.2.4.0 = True
 		TacLifeSupport v0.13.0.0 / v0.13.0 = True
-		Interstellar v1.12.14.0 = True
+		Interstellar v1.12.14.0 = False
 		Diazo = True
+		Interstellar v1.12.18.0 = True
 	}
 	ROSTER
 	{
